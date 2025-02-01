@@ -1,0 +1,271 @@
+Final ordinals seeds Text converter Multiple letters V5
+
+// HTML code
+
+
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>PLAINSIGHT TEXT CONVERTER</title>
+
+  <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+
+  <div class="container">
+
+    <h1>PLAINSIGHT TEXT CONVERTER</h1>
+
+
+
+    <!-- Card for Starting Car Park -->
+
+    <div class="card">
+
+      <h2>Your Private Starting Card</h2>
+
+      <label for="startPark">Click a button:</label>
+
+      <input type="text" id="startPark" readonly>
+
+      <div class="button-group">
+
+        <button onclick="setCarPark('AZ')">AZ</button>
+
+        <button onclick="setCarPark('BA')">BA</button>
+
+        <button onclick="setCarPark('CB')">CB</button>
+
+        <button onclick="setCarPark('DC')">DC</button>
+
+        <button onclick="setCarPark('ED')">ED</button>
+
+        <button onclick="setCarPark('FE')">FE</button>
+
+        <button onclick="setCarPark('GF')">GF</button>
+
+        <button onclick="setCarPark('HG')">HG</button>
+
+        <button onclick="setCarPark('IH')">IH</button>
+
+        <button onclick="setCarPark('JI')">JI</button>
+
+        <button onclick="setCarPark('KJ')">KJ</button>
+
+        <button onclick="setCarPark('LK')">LK</button>
+
+        <button onclick="setCarPark('ML')">ML</button>
+
+        <button onclick="setCarPark('NM')">NM</button>
+
+        <button onclick="setCarPark('ON')">ON</button>
+
+        <button onclick="setCarPark('PO')">PO</button>
+
+        <button onclick="setCarPark('QP')">QP</button>
+
+        <button onclick="setCarPark('RQ')">RQ</button>
+
+        <button onclick="setCarPark('SR')">SR</button>
+
+        <button onclick="setCarPark('TS')">TS</button>
+
+        <button onclick="setCarPark('UT')">UT</button>
+
+        <button onclick="setCarPark('VU')">VU</button>
+
+        <button onclick="setCarPark('WV')">WV</button>
+
+        <button onclick="setCarPark('XW')">XW</button>
+
+        <button onclick="setCarPark('YX')">YX</button>
+
+        <button onclick="setCarPark('ZY')">ZY</button>
+
+      </div>
+
+    </div>
+
+
+
+    <!-- Card for Starting Spots -->
+
+    <div class="card">
+
+      <h2>Your Private Word(s) Sequence</h2>
+
+      <label for="startSpots">(e.g., "B A G"):</label>
+
+      <textarea id="startSpots" rows="1"></textarea>
+
+      <div class="button-group">
+
+        <!-- Buttons for A to Z -->
+
+        <button onclick="addStartingSpot('A')">A</button>
+
+        <button onclick="addStartingSpot('B')">B</button>
+
+        <button onclick="addStartingSpot('C')">C</button>
+
+        <button onclick="addStartingSpot('D')">D</button>
+
+        <button onclick="addStartingSpot('E')">E</button>
+
+        <button onclick="addStartingSpot('F')">F</button>
+
+        <button onclick="addStartingSpot('G')">G</button>
+
+        <button onclick="addStartingSpot('H')">H</button>
+
+        <button onclick="addStartingSpot('I')">I</button>
+
+        <button onclick="addStartingSpot('J')">J</button>
+
+        <button onclick="addStartingSpot('K')">K</button>
+
+        <button onclick="addStartingSpot('L')">L</button>
+
+        <button onclick="addStartingSpot('M')">M</button>
+
+        <button onclick="addStartingSpot('N')">N</button>
+
+        <button onclick="addStartingSpot('O')">O</button>
+
+        <button onclick="addStartingSpot('P')">P</button>
+
+        <button onclick="addStartingSpot('Q')">Q</button>
+
+        <button onclick="addStartingSpot('R')">R</button>
+
+        <button onclick="addStartingSpot('S')">S</button>
+
+        <button onclick="addStartingSpot('T')">T</button>
+
+        <button onclick="addStartingSpot('U')">U</button>
+
+        <button onclick="addStartingSpot('V')">V</button>
+
+        <button onclick="addStartingSpot('W')">W</button>
+
+        <button onclick="addStartingSpot('X')">X</button>
+
+        <button onclick="addStartingSpot('Y')">Y</button>
+
+        <button onclick="addStartingSpot('Z')">Z</button>
+
+        <button onclick="addStartingSpot('_')">_</button>
+
+        <button onclick="clearRecentEntry('startSpots')" class="clear-button">Clear</button>
+
+      </div>
+
+    </div>
+
+
+
+    <!-- Card for Destination Parks -->
+
+    <div class="card">
+
+      <h2>Your Public Ordinals Sequence</h2>
+
+      <label for="destParks">(e.g., "AZ BA CB"):</label>
+
+      <textarea id="destParks" rows="1"></textarea>
+
+      <div class="button-group">
+
+        <button onclick="addDestinationPark('AZ')">AZ</button>
+
+        <button onclick="addDestinationPark('BA')">BA</button>
+
+        <button onclick="addDestinationPark('CB')">CB</button>
+
+        <button onclick="addDestinationPark('DC')">DC</button>
+
+        <button onclick="addDestinationPark('ED')">ED</button>
+
+        <button onclick="addDestinationPark('FE')">FE</button>
+
+        <button onclick="addDestinationPark('GF')">GF</button>
+
+        <button onclick="addDestinationPark('HG')">HG</button>
+
+        <button onclick="addDestinationPark('IH')">IH</button>
+
+        <button onclick="addDestinationPark('JI')">JI</button>
+
+        <button onclick="addDestinationPark('KJ')">KJ</button>
+
+        <button onclick="addDestinationPark('LK')">LK</button>
+
+        <button onclick="addDestinationPark('ML')">ML</button>
+
+        <button onclick="addDestinationPark('NM')">NM</button>
+
+        <button onclick="addDestinationPark('ON')">ON</button>
+
+        <button onclick="addDestinationPark('PO')">PO</button>
+
+        <button onclick="addDestinationPark('QP')">QP</button>
+
+        <button onclick="addDestinationPark('RQ')">RQ</button>
+
+        <button onclick="addDestinationPark('SR')">SR</button>
+
+        <button onclick="addDestinationPark('TS')">TS</button>
+
+        <button onclick="addDestinationPark('UT')">UT</button>
+
+        <button onclick="addDestinationPark('VU')">VU</button>
+
+        <button onclick="addDestinationPark('WV')">WV</button>
+
+        <button onclick="addDestinationPark('XW')">XW</button>
+
+        <button onclick="addDestinationPark('YX')">YX</button>
+
+        <button onclick="addDestinationPark('ZY')">ZY</button>
+
+        <button onclick="clearRecentEntry('destParks')" class="clear-button">Clear</button>
+
+      </div>
+
+    </div>
+
+
+
+    <!-- Card for Viewing Hidden Text -->
+
+    <div class="card">
+
+      <button id="viewBooking">View Hidden Text</button>
+
+      <div id="output">
+
+        <p id="matchingKeys"></p>
+
+        <p id="spotNumbers"></p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>
