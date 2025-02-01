@@ -29,7 +29,7 @@ const carParkMap = {
 
 // Initialize the bot
 const bot = new TelegramBot({
-  token: 'YOUR_TELEGRAM_BOT_TOKEN', // Replace with your bot's API token
+  token: process.env.TELEGRAM_BOT_TOKEN, // Retrieve the token from the environment variable
   updates: {
     allowed_updates: ['message'],
   },
